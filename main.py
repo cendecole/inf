@@ -1,9 +1,14 @@
-a=int(input("введите делимое:"))
-b=int(input("введите делитель:"))
-if b==0:
-    print("Ошибка! Деление на 0!")
+i=int(input("введите верхний предел:"))
+a=1
+b=0
+if i>100:
+    print("ошибка!")
 else:
-    print(a/b)
+    while a<i:
+        b=b+a*a*a
+        a=a+1
+    print(b)
+
 
 
 
